@@ -1,6 +1,6 @@
 'use strict';
 
-const combine = (...functions) => (input) => {
+const compose = (...functions) => (input) => {
   const callbacks = [];
   const combined = (input) => {
     if (functions.length === 0) return input;
